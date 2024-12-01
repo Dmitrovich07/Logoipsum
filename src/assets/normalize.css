@@ -39,5 +39,10 @@ button {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  /* width: 100%; */
+  padding: 0 10px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }

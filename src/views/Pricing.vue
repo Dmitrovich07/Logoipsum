@@ -1,20 +1,18 @@
 <template>
-  <div class="pricing-section"></div>
+  <div class="container">
+    <h1 class="title">Pricing page</h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Pricing',
-  data() {
-    return {
-
-    }
-  }
+  name: 'Pricing'
 }
 </script>
 
 <style lang="scss" scoped>
-  .pricing-section {
-    height: 100vh;
-  }
+.title {
+  text-align: center;
+  padding: 20px 0;
+}
 </style>

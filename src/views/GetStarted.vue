@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <h1 class="title">Features page</h1>
-  </div>
+<div class="container">
+  <h1 class="title">Get Started page</h1>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'Features'
+  name: 'GetStarted'
 }
 </script>
 

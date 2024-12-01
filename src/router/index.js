@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Features from '../views/Features.vue'
 import Pricing from '../views/Pricing.vue'
 import Blog from '../views/Blog.vue'
+import GetStarted from '../views/GetStarted.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: Blog
+  },
+  {
+    path: '/get-started',
+    name: 'GetStarted',
+    component: GetStarted
   }
 ]
 
@@ -31,24 +37,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-
-// router.beforeEach((to, from, next) => {
-//   console.log('Global beforeEach triggered');
-
-//   // Закрываем бургер-меню (или любой другой элемент) при переходе
-//   const app = router.app; // Получаем доступ к корневому экземпляру Vue
-//   if (app && app.$root && app.$root.isOpen !== undefined) {
-//     app.$root.isOpen = false;
-//     app.$root.isShow = false;
-//   }
-
-//   // Убираем класс no-scroll с body
-//   if (document.body.classList.contains('no-scroll')) {
-//     document.body.classList.remove('no-scroll');
-//   }
-
-//   // Разрешаем переход
-//   next();
-// });
 
 export default router
